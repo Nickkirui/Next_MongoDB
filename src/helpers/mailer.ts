@@ -21,13 +21,13 @@ export const sendEmail = async({email, emailType, userId}:any) => {
             port: 2525,
             auth: {
               user: "9b44da01c8a0fe",
-              pass: "********3152"
+              pass: "0a0090f4633152"
             }
           });
 
 
         const mailOptions = {
-            from: 'hitesh@gmail.com',
+            from: 'nichokirui12@gmail.com',
             to: email,
             subject: emailType === "VERIFY" ? "Verify your email" : "Reset your password",
             html: `<p>Click <a href="${process.env.DOMAIN}/verifyemail?token=${hashedToken}">here</a> to ${emailType === "VERIFY" ? "verify your email" : "reset your password"}
